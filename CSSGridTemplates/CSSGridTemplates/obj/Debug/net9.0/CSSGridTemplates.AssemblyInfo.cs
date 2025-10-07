@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CSSGridTemplates")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d58f8a0e58026b4965a0765f4e38f554369080cd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65dfb99d23c5bf6648370434463cb9e575c87a45")]
 [assembly: System.Reflection.AssemblyProductAttribute("CSSGridTemplates")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CSSGridTemplates")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

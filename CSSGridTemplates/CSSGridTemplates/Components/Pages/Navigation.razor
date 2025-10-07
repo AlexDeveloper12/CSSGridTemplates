@@ -1,0 +1,34 @@
+@rendermode InteractiveServer
+@inject NavigationManager NavManager
+
+<div class="d-flex justify-content-center align-items-center mt-3">
+    <div class="custom-font sub-header">
+        <button type="button"
+                class="remove-button-style button-font-size ms-3 text-black @(ActiveNavigationIndex == 1 ? "active-navigation" : "")"
+                @onclick="() => ToggleActiveNavigation(1)">
+            Home
+        </button>
+        <button type="button"
+                class="remove-button-style button-font-size ms-3 text-black @(ActiveNavigationIndex == 2 ? "active-navigation" : "")"
+                @onclick="() => ToggleActiveNavigation(2)">
+            Layout Examples
+        </button>
+    </div>
+</div>
+
+@code{
+
+    private int ActiveNavigationIndex { get; set; } = 1;
+
+    private void ToggleActiveNavigation(int index)
+    {
+        ActiveNavigationIndex = index;
+    }
+
+    private void NavigateToPage(string url)
+    {
+        NavManager.NavigateTo(url);
+    }
+
+
+}

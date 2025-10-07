@@ -318,3 +318,20 @@ main[b-dxoauxb5mn] {
         grid-template-rows: repeat(6, 200px);
     }
 } 
+/* _content/CSSGridTemplates/Components/Pages/Navigation.razor.rz.scp.css */
+.remove-button-style[b-uy0bx27imy] {
+    outline: none;
+    text-decoration: none;
+    border:none;
+    background: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.active-navigation[b-uy0bx27imy] {
+    border-bottom:2px solid black;
+}
+
+.button-font-size[b-uy0bx27imy] {
+    font-size: 1.5rem;
+}

@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "/Users/alex/.nuget/packages/": {}
+    "/Users/alexbiddle/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alex/testrider2023/CSSGridTemplates/CSSGridTemplates/CSSGridTemplates/CSSGridTemplates.csproj",
+      "projectUniqueName": "/Users/alexbiddle/RiderProjects/CSSGridTemplates/CSSGridTemplates/CSSGridTemplates/CSSGridTemplates.csproj",
       "projectName": "CSSGridTemplates",
-      "projectPath": "/Users/alex/testrider2023/CSSGridTemplates/CSSGridTemplates/CSSGridTemplates/CSSGridTemplates.csproj",
-      "packagesPath": "/Users/alex/.nuget/packages/",
-      "outputPath": "/Users/alex/testrider2023/CSSGridTemplates/CSSGridTemplates/CSSGridTemplates/obj/",
+      "projectPath": "/Users/alexbiddle/RiderProjects/CSSGridTemplates/CSSGridTemplates/CSSGridTemplates/CSSGridTemplates.csproj",
+      "packagesPath": "/Users/alexbiddle/.nuget/packages/",
+      "outputPath": "/Users/alexbiddle/RiderProjects/CSSGridTemplates/CSSGridTemplates/CSSGridTemplates/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/alex/.nuget/NuGet/NuGet.Config"
+        "/Users/alexbiddle/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -38,7 +38,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -62,7 +68,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/Cellar/dotnet/7.0.100/libexec/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/Users/alexbiddle/.dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
