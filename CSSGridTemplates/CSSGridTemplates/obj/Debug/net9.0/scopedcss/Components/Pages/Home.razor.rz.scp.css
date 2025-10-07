@@ -1,0 +1,114 @@
+.home-container[b-yovxvb1k7l] {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 200px);
+    padding:10px;
+    gap:1rem 1rem;
+    height:90vh;
+    align-content: center;
+}
+
+.layout-item-container[b-yovxvb1k7l]{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    transition:box-shadow .3s;
+}
+
+.home-container > .layout-item-container:hover[b-yovxvb1k7l] {
+    box-shadow: 10px 10px 10px #ccc;
+}
+
+.three-column-layout[b-yovxvb1k7l]{
+    background-color: lightgray;
+}
+
+.newspaper-layout[b-yovxvb1k7l]{
+    /*background-color:lightseagreen;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+}
+
+.newspaper-image[b-yovxvb1k7l]{
+    grid-row-start:1;
+    grid-row-end:4;
+    grid-column-start:1;
+    grid-column-end:2;
+    border:1px solid red;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+.newspaper-text[b-yovxvb1k7l]{
+    grid-row-start:1;
+    grid-row-end:4;
+    grid-column-start:2;
+    grid-column-end:3;
+    border:1px solid green;
+}
+
+.three-column-layout-header[b-yovxvb1k7l]{
+    background-color: lightskyblue;
+}
+
+.two-column-layout[b-yovxvb1k7l]{
+    background-color: darksalmon;
+}
+
+.three-column-layout-header-footer[b-yovxvb1k7l]{
+    background-color:peachpuff;
+}
+
+.one-column-layout[b-yovxvb1k7l]{
+    background-color: firebrick;
+}
+
+.six-element-grid-container[b-yovxvb1k7l]{
+    background-color: #bcd0c7;
+}
+
+.six-element-grid[b-yovxvb1k7l]{
+    display: grid;
+    grid-template-columns: 1fr repeat(4,1fr);
+    grid-template-rows:repeat(5,1fr);
+}
+
+.sub-header[b-yovxvb1k7l]{
+    font-size:1.2rem;
+}
+
+.six-element-grid > div[b-yovxvb1k7l]{
+    border:1px solid black;
+}
+
+.six-element-grid-image[b-yovxvb1k7l]{
+    grid-area:1 / 1 / 2 / 2;
+}
+
+.six-element-grid-header[b-yovxvb1k7l]{
+    grid-area:1 / 2 / 2 / 6;
+}
+
+.six-element-grid-left-nav[b-yovxvb1k7l]{
+    grid-area:2 / 1 / 6 / 2;
+}
+
+.six-element-grid-center-content[b-yovxvb1k7l]{
+    grid-area: 2 / 2 / 6 / 6;
+    display: grid;
+    place-items: center;
+}
+
+.six-element-grid-center-footer[b-yovxvb1k7l]{
+    grid-area: 6 / 1 / 7 / 6;
+    display: grid;
+    place-items: center;
+}
+
+@media only screen and (max-width:900px){
+    .home-container[b-yovxvb1k7l] {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 200px);
+    }
+} 

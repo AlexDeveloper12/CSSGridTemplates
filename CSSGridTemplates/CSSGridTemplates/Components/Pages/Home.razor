@@ -1,7 +1,98 @@
 ﻿@page "/"
+@page "/Home"
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+<header>
+    <div class="d-flex justify-content-center mt-3">
+        <h1 class="custom-font header-text">Gridify</h1>
+    </div>
+</header>
 
-Welcome to your new app.
+<div class="d-flex justify-content-center align-items-center mt-3">
+    <div class="custom-font sub-header">
+        <a href="/Home" class="text-decoration-none text-black">Home</a>
+        <a href="/layout-example" class="text-decoration-none ms-3 text-black">Layout Examples</a>
+    </div>
+</div>
+
+<div class="home-container">
+    <div class="layout-item-container">
+        <a href="/three-column-layout" class="text-decoration-none text-black h-100">
+            <div class="d-flex flex-column h-100 three-column-layout">
+                <div class="d-flex justify-content-center align-items-center column-gap-2 h-100">
+                    <div class="align-self-center align-content-center layout-item-content"
+                         style="border:1px solid black;width:40px;height:100px">
+                    </div>
+                    <div class="align-self-center align-content-center layout-item-content"
+                         style="border:1px solid black;width:40px;height:100px">
+                    </div>
+                    <div class="align-self-center align-content-center layout-item-content"
+                         style="border:1px solid black;width:40px;height:100px">
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="layout-item-container">
+        <a href="/newspaper-layout" class="text-decoration-none text-black h-100">
+            <div class="d-flex flex-column h-100 newspaper-layout">
+                <div class="flex-grow-1 align-self-center align-content-center layout-item-content">
+                    <div class="newspaper-layout">
+                        <div class="newspaper-image">
+                            <img src="images/lionphoto.jpeg"
+                                 style="width:100px;height:80px;object-fit: cover;display: block;"/>
+                        </div>
+                        <div class="newspaper-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel bibendum augue, sit
+                            amet lacinia lectus. Sed ut leo ac tortor blandit dapibus ut at metus. Mauris vitae
+                            scelerisque arcu.
+                        </div>
+                        <div class="newspaper-footer-text">Newspaper footer text</div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="layout-item-container">
+        <a href="/three-column-layout-header" class="text-decoration-none text-black h-100">
+            <div class="d-flex flex-column h-100 three-column-layout-header">
+                <div class="flex-grow-1 align-self-center align-content-center layout-item-content">
+                    Three column layout + header
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="layout-item-container">
+        <a href="/three-column-layout-image-header-footer"
+           class="text-decoration-none text-black h-100 six-element-grid-container">
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="six-element-grid column-gap-2 row-gap-2">
+                    <div class="six-element-grid-image">Image</div>
+                    <div class="six-element-grid-header">Header</div>
+                    <div class="six-element-grid-left-nav">Nav</div>
+                    <div class="six-element-grid-center-content">Content</div>
+                    <div class="six-element-grid-center-footer">Footer</div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="layout-item-container">
+        <a href="/three-column-layout-header-footer" class="text-decoration-none text-black h-100">
+            <div class="d-flex flex-column h-100 three-column-layout-header-footer">
+                <div class="border-bottom flex-grow-1 align-self-center align-content-center layout-item-content">
+                    Three column layout with header and footer
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="layout-item-container">
+        <a href="/one-column-layout" class="text-decoration-none text-black h-100">
+            <div class="d-flex flex-column h-100 one-column-layout">
+                <div class="flex-grow-1 align-self-center align-content-center layout-item-content">
+                    One column layout
+                </div>
+            </div>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,114 @@
+.home-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 200px);
+    padding:10px;
+    gap:1rem 1rem;
+    height:90vh;
+    align-content: center;
+}
+
+.layout-item-container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    transition:box-shadow .3s;
+}
+
+.home-container > .layout-item-container:hover {
+    box-shadow: 10px 10px 10px #ccc;
+}
+
+.three-column-layout{
+    background-color: lightgray;
+}
+
+.newspaper-layout{
+    /*background-color:lightseagreen;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+}
+
+.newspaper-image{
+    grid-row-start:1;
+    grid-row-end:4;
+    grid-column-start:1;
+    grid-column-end:2;
+    border:1px solid red;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+.newspaper-text{
+    grid-row-start:1;
+    grid-row-end:4;
+    grid-column-start:2;
+    grid-column-end:3;
+    border:1px solid green;
+}
+
+.three-column-layout-header{
+    background-color: lightskyblue;
+}
+
+.two-column-layout{
+    background-color: darksalmon;
+}
+
+.three-column-layout-header-footer{
+    background-color:peachpuff;
+}
+
+.one-column-layout{
+    background-color: firebrick;
+}
+
+.six-element-grid-container{
+    background-color: #bcd0c7;
+}
+
+.six-element-grid{
+    display: grid;
+    grid-template-columns: 1fr repeat(4,1fr);
+    grid-template-rows:repeat(5,1fr);
+}
+
+.sub-header{
+    font-size:1.2rem;
+}
+
+.six-element-grid > div{
+    border:1px solid black;
+}
+
+.six-element-grid-image{
+    grid-area:1 / 1 / 2 / 2;
+}
+
+.six-element-grid-header{
+    grid-area:1 / 2 / 2 / 6;
+}
+
+.six-element-grid-left-nav{
+    grid-area:2 / 1 / 6 / 2;
+}
+
+.six-element-grid-center-content{
+    grid-area: 2 / 2 / 6 / 6;
+    display: grid;
+    place-items: center;
+}
+
+.six-element-grid-center-footer{
+    grid-area: 6 / 1 / 7 / 6;
+    display: grid;
+    place-items: center;
+}
+
+@media only screen and (max-width:900px){
+    .home-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 200px);
+    }
+} 
